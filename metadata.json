@@ -1,0 +1,5 @@
+{
+  "name": "AI Token Counter & Tiktoken Calculator",
+  "description": "Professional-grade AI Token Counter. Uses official Tiktoken logic (o200k_base, cl100k_base) for accurate GPT-4o and GPT-4 calculations. 100% Private.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Token Counter | Official Tiktoken Calculator for GPT-4o & GPT-4</title>
+    
+    <!-- Primary SEO -->
+    <meta name="title" content="AI Token Counter | Official Tiktoken Calculator for GPT-4o & GPT-4">
+    <meta name="description" content="Free high-speed AI Token Counter. Official Tiktoken logic for GPT-4o, GPT-4, and GPT-3.5. Accurate word, character, and token count with pricing estimates. Privacy-focused.">
+    <meta name="keywords" content="AI Token Counter, Tiktoken Calculator, GPT-4o Tokenizer, GPT-4 tokens, Word to Token Converter, OpenAI Tokenizer, LLM Token Count">
+    <meta name="author" content="AI Token Counter Team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://token-counter.app/">
+
+    <!-- Social Media: Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://token-counter.app/">
+    <meta property="og:title" content="AI Token Counter | Official Tiktoken Logic">
+    <meta property="og:description" content="Calculate tokens for GPT-4o, GPT-4, and GPT-3.5 instantly. Official Tiktoken logic running locally in your browser.">
+    <meta property="og:image" content="https://token-counter.app/og-image.png">
+
+    <!-- Social Media: Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://token-counter.app/">
+    <meta property="twitter:title" content="AI Token Counter | Official Tiktoken Logic">
+    <meta property="twitter:description" content="Calculate tokens for GPT-4o, GPT-4, and GPT-3.5 instantly. Privacy-focused browser-based tool.">
+    <meta property="twitter:image" content="https://token-counter.app/og-image.png">
+
+    <!-- Yandex Specific -->
+    <meta name="yandex-verification" content="YOUR_YANDEX_VERIFICATION_CODE" />
+    <meta name="theme-color" content="#10a37f">
+
+    <!-- Performance & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        /* Prevent CLS */
+        .stats-grid-skeleton { min-height: 120px; }
+    </style>
+
+    <!-- Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AI Token Counter",
+      "operatingSystem": "Web Browser",
+      "applicationCategory": "UtilitiesApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "An accurate token counter using OpenAI's official Tiktoken library for GPT-4o, GPT-4, and other LLMs."
+    }
+    </script>
+
+    <!-- Structured Data: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is an AI token?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tokens are the basic units of text processed by LLMs. In English, 1,000 tokens are approximately 750 words."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Does this tool support GPT-4o?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our tool uses the official o200k_base tokenizer required for GPT-4o and o1 models."
+        }
+      }]
+    }
+    </script>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "js-tiktoken": "https://esm.sh/js-tiktoken@1.0.15"
+      }
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+</body>
+</html>
