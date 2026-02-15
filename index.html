@@ -1,37 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Token Counter | Official Tiktoken Calculator for GPT-4o & GPT-4</title>
     
-    <!-- Primary SEO -->
-    <meta name="title" content="AI Token Counter | Official Tiktoken Calculator for GPT-4o & GPT-4">
-    <meta name="description" content="Free high-speed AI Token Counter. Official Tiktoken logic for GPT-4o, GPT-4, and GPT-3.5. Accurate word, character, and token count with pricing estimates. Privacy-focused.">
-    <meta name="keywords" content="AI Token Counter, Tiktoken Calculator, GPT-4o Tokenizer, GPT-4 tokens, Word to Token Converter, OpenAI Tokenizer, LLM Token Count">
-    <meta name="author" content="AI Token Counter Team">
+    <!-- Title & SEO Meta -->
+    <title>AI Token Counter | Official Tiktoken Logic for GPT-4o & GPT-4</title>
+    <meta name="description" content="Calculate tokens for OpenAI models GPT-4o, o1, and GPT-4 using official Tiktoken logic. Free, accurate, and 100% private browser-based tokenizer.">
+    <meta name="keywords" content="AI Token Counter, Tiktoken Calculator, GPT-4o Tokenizer, GPT-4 tokens, Word to Token Converter, OpenAI Tokenizer">
+    <meta name="author" content="AI Token Counter">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://token-counter.app/">
 
     <!-- Social Media: Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://token-counter.app/">
-    <meta property="og:title" content="AI Token Counter | Official Tiktoken Logic">
-    <meta property="og:description" content="Calculate tokens for GPT-4o, GPT-4, and GPT-3.5 instantly. Official Tiktoken logic running locally in your browser.">
+    <meta property="og:title" content="AI Token Counter | GPT-4o & GPT-4 Logic">
+    <meta property="og:description" content="Official Tiktoken logic for GPT-4o, GPT-4, and GPT-3.5. Accurate word and token count instantly.">
     <meta property="og:image" content="https://token-counter.app/og-image.png">
 
     <!-- Social Media: Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://token-counter.app/">
-    <meta property="twitter:title" content="AI Token Counter | Official Tiktoken Logic">
-    <meta property="twitter:description" content="Calculate tokens for GPT-4o, GPT-4, and GPT-3.5 instantly. Privacy-focused browser-based tool.">
+    <meta property="twitter:title" content="AI Token Counter | GPT-4o Logic">
+    <meta property="twitter:description" content="Professional token counter for OpenAI models. Runs 100% in-browser for privacy.">
     <meta property="twitter:image" content="https://token-counter.app/og-image.png">
 
-    <!-- Yandex Specific -->
-    <meta name="yandex-verification" content="YOUR_YANDEX_VERIFICATION_CODE" />
+    <!-- Search Engine Verification -->
     <meta name="theme-color" content="#10a37f">
-
+    
     <!-- Performance & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,11 +37,11 @@
     
     <style>
         body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
-        /* Prevent CLS */
-        .stats-grid-skeleton { min-height: 120px; }
+        /* Prevent CLS (Cumulative Layout Shift) */
+        #root { min-height: 100vh; }
     </style>
 
-    <!-- Structured Data: SoftwareApplication -->
+    <!-- Structured Data (JSON-LD) for SEO Rich Snippets -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -61,7 +58,6 @@
     }
     </script>
 
-    <!-- Structured Data: FAQ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -75,27 +71,31 @@
         }
       }, {
         "@type": "Question",
-        "name": "Does this tool support GPT-4o?",
+        "name": "Is my data safe with this token counter?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, our tool uses the official o200k_base tokenizer required for GPT-4o and o1 models."
+          "text": "Yes. This tool runs 100% locally in your browser. Your text is never sent to a server."
         }
       }]
     }
     </script>
 
     <script type="importmap">
-    {
-      "imports": {
-        "react/": "https://esm.sh/react@^19.2.4/",
-        "react": "https://esm.sh/react@^19.2.4",
-        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-        "js-tiktoken": "https://esm.sh/js-tiktoken@1.0.15"
-      }
-    }
-    </script>
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "js-tiktoken": "https://esm.sh/js-tiktoken@1.0.15",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
 </head>
 <body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
+    <!-- CRITICAL: The entry point script to load the React application -->
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>
